@@ -1,0 +1,24 @@
+
+.container-result-infos{
+    position:relative;
+    background-color:#fff;
+    z-index: 100;
+    margin: auto 10%;
+    padding: 10px;
+    border-radius: 15px;
+    top:50%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.container-cheminDeVie{
+    pointer-events: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 415px) {
+
+}

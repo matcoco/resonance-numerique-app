@@ -1,0 +1,8 @@
+.bg-light {
+    background-color: #f4e8dc!important;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(236, 13, 13, 0.55)!important;
+    border-color: rgba(82,57,141,.1)!important;
+}

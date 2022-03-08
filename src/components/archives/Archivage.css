@@ -1,0 +1,55 @@
+.container-iconNumber-archivage{
+    display: flex;
+    justify-content:center;
+}
+
+.container-archivage-line{
+    display: flex;
+    align-items: baseline;
+}
+
+.container-archivage{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 1px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.container-save-infos{
+    position:relative;
+    background-color:#fff;
+    height: auto;
+    width:100%;
+    z-index: 100;
+    margin: auto 10%;
+    padding: 10px;
+    border-radius: 15px;
+    top:10%;
+    opacity: 0.97;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.no-data-save{
+    font-size: larger;
+    color: rgba(14, 14, 14, 0.8);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .container-img-save{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../../../public/assets/wave_.svg');
+        background-size: cover;
+        height: 500px;
+        background-repeat: no-repeat;
+   }
+
+}
+
+@media screen and (max-width: 415px) {
+
+
+}
