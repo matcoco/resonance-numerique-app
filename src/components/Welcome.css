@@ -1,0 +1,25 @@
+.container-welcome{
+    width: 80%;
+    margin: auto;
+    color: #4E178D;
+    font-size: 1.1rem;
+}
+
+.container-welcome span{
+    color: #444644;
+    font-size: larger;
+}
+
+.container-welcome h3{
+    color: #444644;
+}
+
+@media screen and (max-width: 768px) {
+
+
+}
+
+@media screen and (max-width: 415px) {
+
+
+}

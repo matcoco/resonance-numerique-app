@@ -1,0 +1,67 @@
+  .container-inputs-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../../../public/assets/wave_.svg');
+    background-size: cover;
+    height: 750px;
+    background-repeat: no-repeat;
+}
+
+.btn-inputs{
+    padding: 1rem;
+    background-color: #4E178D;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 350;
+}
+
+.container-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+
+
+@media screen and (max-width: 768px) {
+     .container-inputs-background{
+        background-image: url('../../../public/assets/wave_.svg');
+        background-size: cover;
+        height: 550px;
+        background-repeat: no-repeat;
+    }
+
+
+    input{
+        padding: 0.5rem;
+        width: 50%;
+        margin-bottom: 1rem;
+        border: 5px solid rgba(241, 241, 241, 0.541);
+        font-size: 1.2rem;
+    }
+
+    .container-wave{
+        display: flex;
+        justify-content: center;
+    }
+
+    .illustration-inputs{
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 415px) {
+    .container-inputs-background{
+       background-image: url('../../../public/assets/wave_.svg');
+       background-size: cover;
+       height: 350px;
+       background-repeat: no-repeat;
+   } 
+
+}

@@ -1,0 +1,18 @@
+.container-save{
+    text-align: center;
+}
+
+.icon-save-results{
+    width:50px
+}
+
+.btn-save{
+    border: none;
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 415px) {
+
+}

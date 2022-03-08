@@ -1,0 +1,61 @@
+
+.container-detail-result-infos{
+    position:relative;
+    background-color:#fff;
+    z-index: 100;
+    margin: auto 10%;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.container-definition{
+    margin-bottom: 4rem;
+    font-size: 1.3rem;
+}
+
+.container-definition h3{
+   margin-bottom: 0.5rem; 
+}
+
+.container-div-detailPart{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.container-detailPart{
+    text-align: center;
+    padding: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 3px 2px;
+}
+
+.container-illustration-display{
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .container-img-displayResults{
+       background-image: url('../../public/assets/wave_.svg');
+       background-size: cover;
+       height: 150px;
+       background-repeat: no-repeat;
+   }
+
+   .container-wave{
+       display: flex;
+       justify-content: center;
+   }
+
+   .illustration-results{
+       position:absolute;
+       width: 100%;
+       z-index: 1;
+   }
+}
+
+@media screen and (max-width: 415px) {
+
+
+}

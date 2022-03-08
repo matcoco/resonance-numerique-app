@@ -1,0 +1,74 @@
+
+
+.link-home{
+    padding: 1rem;
+    background-color: #4E178D;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.container-link-home{
+    margin-top: 2rem;
+}
+.title-btn-home{
+    font-size: 1.3rem;
+    font-weight: 350;
+}
+
+
+.container-img-home{
+        background-image: url('../../../public/assets/background.svg');
+        background-size: cover;
+        height: 850px;
+        background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .container-illustration{
+        display: flex;
+        justify-content: center;
+    }
+
+    .illustration-home{
+        width: 50%;
+    }
+
+    .container-titles{
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .h1-home{
+        padding: 1rem;
+        font-size:large;
+        font-weight: 600;
+        color: #4E178D;
+    }
+    
+    .p-home{
+        padding: 1rem;
+        font-size: 2rem;
+        font-weight:600;
+    }
+
+    .p-home-mention{
+        padding: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 415px) {
+    .container-img-home{
+       background-image: url('../../../public/assets/wave_.svg');
+       background-size: cover;
+       height: 210px;
+       background-repeat: no-repeat;
+   } 
+
+   .illustration-home{
+       width: 50%;
+   }
+}
