@@ -15,7 +15,7 @@ import { useLocation } from "react-router-dom"
 
 const DisplayResults = () => {
 
-    const { state: { currentUser: { prenom, date, soleil, lune, cheminDeVie, terre, zodiacImgPath } } } = useContext(DataContext)
+    const { state: { currentUser: { prenom, date, soleil, lune, cheminDeVie, terre, zodiacImgPath, zodiac } } } = useContext(DataContext)
     useDataStatus(prenom)
     const [back, setBack] = useState("")
     const { state } = useLocation()
@@ -44,6 +44,7 @@ const DisplayResults = () => {
                 <Welcome
                     prenom={capitalize(prenom)}
                     date={date}
+                    zodiac={zodiac}
                 />
 
                 <div className="container-result-infos">
