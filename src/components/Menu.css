@@ -6,3 +6,17 @@
     color: rgba(236, 13, 13, 0.55)!important;
     border-color: rgba(82,57,141,.1)!important;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,300&display=swap');
+.title-nav{
+    font-family: 'Noto Serif Display', serif;
+    color: #52398d!important;
+    font-weight: 600;
+}
+
+
+.navbar-nav li a {
+    font-family: 'Noto Serif Display', serif;
+    font-weight: bolder;
+    font-size: large;
+}

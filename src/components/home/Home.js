@@ -10,12 +10,11 @@ const Home = () => {
             <Menu />
             <ImgIllustration classN="container-img-home">
                 <ImgIllustration classN="container-illustration">
-                    {/*  <img className="illustration-home" src="/assets/illustration_.svg" alt="background header" /> */}
+                    <img className="illustration-home" src="/assets/illustration_.svg" alt="background header" />
                 </ImgIllustration>
-
+                
                 <div className="container-titles">
-                    <h1 className="h1-home">RESONNANCE NUMERIQUE APP</h1>
-                    <p className="p-home">Obtenez votre conjoncture depuis cette application</p>
+                    <p className="p-home">Obtenez votre conjoncture depuis cette application gratuitement</p>
                     <Inputs />
                 </div>
             </ImgIllustration>
