@@ -15,7 +15,6 @@ const DetailsResultsPart = () => {
     useDataStatus("")
 
     useEffect(() => {
-        console.log("detailsResultsParts : ", state)
         let cleanup = true
         fetch('/datas.json').then(res => res.json()).then(data => {
             for (let item of data) {
@@ -30,7 +29,7 @@ const DetailsResultsPart = () => {
             }
         })
         return function () { cleanup = false }
-    }, [state.number, state.type])
+    }, [state.number, state.type, state])
 
     return (
         <>

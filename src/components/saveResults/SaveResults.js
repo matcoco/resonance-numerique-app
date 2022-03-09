@@ -2,6 +2,7 @@ import { useContext } from "react"
 import { DataContext } from "../States/context/DataContext"
 import "./SaveResults.css"
 import { saveToStorage } from "../../utils/Functions"
+import { toast } from "react-toastify"
 
 const SaveResults = () => {
     const { state } = useContext(DataContext)
@@ -11,10 +12,12 @@ const SaveResults = () => {
 
         if (store === null) {
             saveToStorage([state.currentUser])
-        }else{
+            toast.success("Conjonture enregistrée !", { closeOnClick: true, autoClose: 2000, })
+        } else {
             store = JSON.parse(store)
             store.push(state.currentUser)
             saveToStorage(store)
+            toast.success("Conjonture enregistrée !", { closeOnClick: true, autoClose: 2000, })
         }
     }
 

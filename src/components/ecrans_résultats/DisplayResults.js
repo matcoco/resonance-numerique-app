@@ -11,7 +11,7 @@ import { useDataStatus } from "../NoResults.js"
 import Menu from "../Menu"
 import SaveResults from "../saveResults/SaveResults"
 import { lune_img, sun_img, earth_img, path_life_img } from "../const_img/const_img"
-import { useLocation, useParams } from "react-router-dom"
+import { useLocation } from "react-router-dom"
 
 const DisplayResults = () => {
 
@@ -19,14 +19,19 @@ const DisplayResults = () => {
     useDataStatus(prenom)
     const [back, setBack] = useState("")
     const { state } = useLocation()
-    const { testvalue } = useParams()
 
     useEffect(() => {
-        console.log(testvalue)
-         if (state !== null) {
-            setBack(state.back)
+        let cleanup = true
+        if (cleanup) {
+            if (state !== null) {
+                setBack(state.back)
+            }
         }
-    },[])
+
+        return () => {
+            cleanup = false
+        }
+    }, [state])
 
     return (
         <>
@@ -47,12 +52,12 @@ const DisplayResults = () => {
                     </div>
                     <div>
                         <ResultPart img={lune_img} number={lune} text="Je pense..." alt="illustration de la Lune" type="lune" classN="container-resultPart" back={back} />
-                        <ResultPart img={sun_img} number={soleil} text="Je suis..." alt="illustration du Soleil" type="soleil" classN="container-resultPart" back={back}/>
-                        <ResultPart img={earth_img} number={terre} text="Je fais..." alt="illustration de la Terre" type="terre" classN="container-resultPart" back={back}/>
+                        <ResultPart img={sun_img} number={soleil} text="Je suis..." alt="illustration du Soleil" type="soleil" classN="container-resultPart" back={back} />
+                        <ResultPart img={earth_img} number={terre} text="Je fais..." alt="illustration de la Terre" type="terre" classN="container-resultPart" back={back} />
                     </div>
                 </div>
             </ImgIllustration>
-            <SaveResults />
+            {state?.back !== "archives" ? <SaveResults /> : null}
         </>
     )
 }
