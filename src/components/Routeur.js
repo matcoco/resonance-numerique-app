@@ -18,6 +18,7 @@ import React from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import MethodeDeCalcul from "./methode_de_calcul/MethodeDeCalcul";
+import About from "./about/About";
 
 const Routeur = () => {
   const [state, dispatch] = useReducer(Reducer, datas)
@@ -31,6 +32,7 @@ const Routeur = () => {
           <Route path="/resultats" element={<DisplayResults />}></Route>
           <Route path="/resultats/:type" element={<DetailsResultsPart />}></Route>
           <Route path="/methode-de-calcul" element={<MethodeDeCalcul />}></Route>
+          <Route path="/a-propos-du-site" element={<About />}></Route>
         </Routes>
         <ToastContainer />
       </BrowserRouter>

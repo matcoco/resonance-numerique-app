@@ -5,13 +5,22 @@
 
 .container-archivage-line{
     display: flex;
+    flex-direction: column;
     align-items: baseline;
+}
+
+.numbers-archives{
+    display: flex;
+}
+
+.container-main-archives{
+    display: flex;
+    flex-direction: column;
 }
 
 .container-archivage{
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 1px;
     padding: 5px;
     margin-bottom: 10px;
@@ -23,17 +32,21 @@
     height: auto;
     width:100%;
     z-index: 100;
-    margin: auto 10%;
     padding: 10px;
     border-radius: 15px;
-    top:10%;
     opacity: 0.97;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .no-data-save{
+    text-align: center;
     font-size: larger;
     color: rgba(14, 14, 14, 0.8);
     font-weight: bold;
+}
+
+.container-btn-archive{
+    display: flex;
+    align-items: flex-end;
 }
 
 @media screen and (max-width: 768px) {
@@ -43,8 +56,18 @@
         align-items: center;
         background-image: url('../../../public/assets/wave_.svg');
         background-size: cover;
-        height: 500px;
         background-repeat: no-repeat;
+   }
+
+   .prenom-archive{
+       font-size: larger;
+       font-weight: 500;
+   }
+
+   .number-conjoncture{
+       display: flex;
+       align-items: center;
+       margin-bottom: 0px;
    }
 
 }

@@ -32,13 +32,8 @@ const Archivage = () => {
     const iconAndNumber = (number, path, text) => {
         return (
             <div className="container-iconNumber-archivage">
-                <div>
-                    <img src={path} alt={text} />
-                </div>
-                <div>
-                    <p>{number}</p>
-                </div>
-
+                <img src={path} alt={text} />
+                <p className="number-conjoncture">{number}</p>
             </div>
         )
     }
@@ -48,7 +43,7 @@ const Archivage = () => {
         const newData = data.filter((item, index) => index !== id)
         setData(newData)
         saveToStorage(newData)
-        toast.warn("Conjonture supprimée !", { closeOnClick: true, autoClose: 2000, })
+        toast.warn("Conjoncture supprimée !", { closeOnClick: true, autoClose: 2000, })
     }
 
     const handleClickNavigateToItem = (id) => {
@@ -62,37 +57,46 @@ const Archivage = () => {
         <>
             <Menu />
             <ImgIllustration classN={"container-img-save"}>
-                {
-                    data.length > 0 ?
-                        <div className="container-save-infos" >
-                            {
-                                data.map((item, index) => {
-                                    return (
-                                        <div key={index} className="container-archivage">
-                                            <div className="container-archivage-line" onClick={() => { handleClickNavigateToItem(index) }}>
-                                                <span>{capitalize(item.prenom)}</span>
-                                                {iconAndNumber(item.lune, lune_img, "lune")}
-                                                {iconAndNumber(item.soleil, sun_img, "soleil")}
-                                                {iconAndNumber(item.terre, earth_img, "terre")}
-                                            </div>
-                                            <div>
-                                                
+                <div className="container-main-archives">
+                    <div>
+                        <h1 className="h1 container-title-methode">conjonctures enregistrées</h1>
+                    </div>
+                    <div>                {
+                        data.length > 0 ?
+                            <div className="container-save-infos" >
+
+                                {
+                                    data.map((item, index) => {
+                                        return (
+                                            <div key={index} className="container-archivage">
+                                                <div className="container-archivage-line" onClick={() => { handleClickNavigateToItem(index) }}>
+                                                    <div className="d-flex justify-content-center">
+                                                        <span className="prenom-archive">{capitalize(item.prenom)}</span>
+                                                    </div>
+                                                    <div className="numbers-archives">
+                                                        {iconAndNumber(item.lune, lune_img, "lune")}
+                                                        {iconAndNumber(item.soleil, sun_img, "soleil")}
+                                                        {iconAndNumber(item.terre, earth_img, "terre")}
+                                                    </div>
+                                                </div>
+                                                <div className="container-btn-archive">
                                                     <button
                                                         type="button"
                                                         className="btn btn-danger"
                                                         id={index}
                                                         onClick={(e) => { removeItemToStorage(e) }}
                                                     >X</button>
-                                               
+
+                                                </div>
                                             </div>
-                                        </div>
-                                    )
-                                })
-                            }
-                        </div>
-                        :
-                        <div className="no-data-save">pas de données</div>
-                }
+                                        )
+                                    })
+                                }
+                            </div>
+                            :
+                            <div className="no-data-save">pas de données</div>
+                    }</div>
+                </div>
 
             </ImgIllustration>
         </>

@@ -12,15 +12,18 @@ const SaveResults = () => {
 
         if (store === null) {
             saveToStorage([state.currentUser])
-            toast.success("Conjonture enregistrée !", { closeOnClick: true, autoClose: 2000, })
+            toasti("Conjoncture enregistrée !")
         } else {
             store = JSON.parse(store)
             store.push(state.currentUser)
             saveToStorage(store)
-            toast.success("Conjonture enregistrée !", { closeOnClick: true, autoClose: 2000, })
+            toasti("Conjoncture enregistrée !")
         }
     }
 
+    const toasti = (text) => {
+        toast.success(text, { closeOnClick: true, autoClose: 2000, })
+    }
 
     return (
         <div className="container-save">

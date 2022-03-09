@@ -14,3 +14,7 @@ p, input{
 a{
     text-decoration: none;
 }
+
+.text{
+   font-size: larger;
+}
