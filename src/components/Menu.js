@@ -22,7 +22,7 @@ const Menu = () => {
                                 <NavLink to="/archives"><span className="nav-link" aria-current="page">Archives</span></NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/"><span className="nav-link" aria-current="page">Méthode de calcul</span></NavLink>
+                                <NavLink to="/methode-de-calcul"><span className="nav-link" aria-current="page">Méthode de calcul</span></NavLink>
                             </li>
                         </ul>
                     </div>
