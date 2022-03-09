@@ -5,6 +5,16 @@
     font-size: 1.1rem;
 }
 
+.container-date-welcome{
+    display: flex;
+}
+
+.container-date-welcome h3{
+    font-size:large;
+}
+
+
+
 .container-welcome span{
     color: #444644;
     font-size: larger;

@@ -14,24 +14,108 @@ const Inputs = () => {
     let current_date = useRef(null)
     let current_prenom = useRef(null)
     const arrayZodiac = [
-        { "aquarius": "/assets/zodiac_img/verseau.svg" },
-        { "capricorn": "/assets/zodiac_img/capricorne.svg" },
-        { "aries": "assets/zodiac_img/belier.svg" },
-        { "taurus": "assets/zodiac_img/taureau.svg" },
-        { "gemini": "assets/zodiac_img/gemeau.svg" },
-        { "cancer": "assets/zodiac_img/cancer.svg" },
-        { "leo": "assets/zodiac_img/lion.svg" },
-        { "virgo": "assets/zodiac_img/vierge.svg" },
-        { "libra": "assets/zodiac_img/balance.svg" },
-        { "scorpio": "assets/zodiac_img/scorpion.svg" },
-        { "sagittarius": "assets/zodiac_img/sagittaire.svg" },
-        { "pisces": "assets/zodiac_img/poisson.svg" },
+        {
+            "aquarius": {
+                "obj": {
+                    "path": "/assets/zodiac_img/verseau.svg",
+                    "fr": "verseau"
+                }
+            }
+        },
+        {
+            "capricorn": {
+                "obj": {
+                    "path": "/assets/zodiac_img/capricorne.svg",
+                    "fr": "capricorne"
+                }
+            }
+        },
+        {
+            "aries": {
+                "obj": {
+                    "path": "assets/zodiac_img/belier.svg",
+                    "fr": "bélier"
+                }
+            }
+        },
+        {
+            "taurus": {
+                "obj": {
+                    "path": "assets/zodiac_img/taureau.svg",
+                    "fr": "taureau"
+                }
+            }
+        },
+        {
+            "gemini": {
+                "obj": {
+                    "path": "assets/zodiac_img/gemeau.svg",
+                    "fr": "gémeau"
+                }
+            }
+        },
+        {
+            "cancer": {
+                "obj": {
+                    "path": "assets/zodiac_img/cancer.svg",
+                    "fr": "cancer"
+                }
+            }
+        },
+        {
+            "leo": {
+                "obj": {
+                    "path": "assets/zodiac_img/lion.svg",
+                    "fr": "lion"
+                }
+            }
+        },
+        {
+            "virgo": {
+                "obj": {
+                    "path": "assets/zodiac_img/vierge.svg",
+                    "fr": "vierge"
+                }
+            }
+        },
+        {
+            "libra": {
+                "obj": {
+                    "path": "assets/zodiac_img/balance.svg",
+                    "fr": "balance"
+                }
+            }
+        },
+        {
+            "scorpio": {
+                "obj": {
+                    "path": "assets/zodiac_img/scorpion.svg",
+                    "fr": "scorpion"
+                }
+            }
+        },
+        {
+            "sagittarius": {
+                "obj": {
+                    "path": "assets/zodiac_img/sagittaire.svg",
+                    "fr": "sagittaire"
+                }
+            }
+        },
+        {
+            "pisces": {
+                "obj": {
+                    "path": "assets/zodiac_img/poisson.svg",
+                    "fr": "poisson"
+                }
+            }
+        },
     ]
 
 
     const handleClickDate = () => {
         if (current_prenom.current.value !== "" && current_date.current.value !== "") {
-            let jour, mois, annee, date, zodiacSign, infos, imgPathZodiac
+            let jour, mois, annee, date, zodiacSign, infos, zodiac_infos
 
             jour = current_date.current.value.split("-")[2]
             mois = current_date.current.value.split("-")[1]
@@ -40,9 +124,9 @@ const Inputs = () => {
 
             zodiacSign = zodiac.getSignByDate({ day: jour, month: mois })
             infos = new Numerologie(current_prenom.current.value, date)
-            imgPathZodiac = checkZodiacImg(zodiacSign)
-
-            dispatch({ type: SET_BIRTH_DATE, payload: { ...infos, zodiacImgPath: imgPathZodiac, zodiac: zodiacSign } })
+            zodiac_infos = checkZodiacImg(zodiacSign)
+            
+            dispatch({ type: SET_BIRTH_DATE, payload: { ...infos, zodiacImgPath: zodiac_infos.path, zodiac: zodiac_infos.fr } })
             resetInputs()
             navigate("/resultats", {})
         } else {
@@ -52,9 +136,12 @@ const Inputs = () => {
 
     const checkZodiacImg = (datas) => {
         const zodiac = datas?.name?.toLowerCase()
+        let obj_zodiac = {}
         for (let item of arrayZodiac) {
             if (item.hasOwnProperty(zodiac)) {
-                return item[`${zodiac}`];
+                obj_zodiac.path = item[`${zodiac}`].obj.path
+                obj_zodiac.fr = item[`${zodiac}`].obj.fr;
+                return obj_zodiac
             }
         }
     }
