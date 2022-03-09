@@ -17,6 +17,11 @@
 }
 
 
+.illustration-home{
+    margin-top: 20px;
+}
+
+
 .container-img-home{
         background-image: url('../../../public/assets/background.svg');
         background-size: cover;
@@ -25,8 +30,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
-
     .container-illustration{
         display: flex;
         justify-content: center;
@@ -40,17 +43,10 @@
         text-align: center;
         margin-top: 2rem;
     }
-
-    .h1-home{
-        padding: 1rem;
-        font-size:large;
-        font-weight: 600;
-        color: #4E178D;
-    }
     
     .p-home{
         padding: 1rem;
-        font-size: 2rem;
+        font-size: 1.7rem;
         font-weight:600;
     }
 
@@ -64,7 +60,7 @@
     .container-img-home{
        background-image: url('../../../public/assets/wave_.svg');
        background-size: cover;
-       height: 210px;
+       height: 280px;
        background-repeat: no-repeat;
    } 
 

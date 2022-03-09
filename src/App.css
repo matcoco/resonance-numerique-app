@@ -10,3 +10,7 @@ p, input{
     font-family: 'Noto Serif Display', serif;
     color: rgb(59, 59, 59);
 }
+
+a{
+    text-decoration: none;
+}
