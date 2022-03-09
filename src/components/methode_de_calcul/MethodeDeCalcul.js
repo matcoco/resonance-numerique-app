@@ -14,7 +14,7 @@ const MethodeDeCalcul = () => {
                 <div className="container-cheminDeVie-methode">
                     <h2>Calcul du chemin de vie</h2>
                     <p>Pour calculer le chemin de vie, prenez pour exemple la date de naissance suivante :</p>
-                    <p>{`20/04/1980 => 2 + 0 + 0 + 4 + 1 + 9 + 8 + 0 = `} <span className="resultat-calcul">2+4</span></p>
+                    <p>{`20/04/1980 => 2 + 0 + 0 + 4 + 1 + 9 + 8 + 0 = `} <span className="resultat-calcul">24</span></p>
                     <p>{`24 => 2 + 4 => ` }<span className="resultat-calcul">6</span></p>
                     <p>Votre chemin de vie est le nombre 6</p>
                     <p className="text-muted">- Si vous trouvez les nombres 11 - 22 - 33, il ne faudra pas les réduire. Ces nombres ont une significations -</p>
@@ -32,7 +32,7 @@ const MethodeDeCalcul = () => {
                     <p>{`04 => 0 + 4 = `}<span className="resultat-calcul">4</span></p>
                     <h5>ANNEE</h5>
                     <p>{`L'année correspond à la terre. Il s'agit de savoir comment je fais.`}</p>
-                    <p>{`1980 => 1 + 9 + 8 + 0 = 1 + 8 = `}<span className="resultat-calcul">9</span></p>
+                    <p>{`1980 => 1 + 9 + 8 + 0 = 18 => 1 + 8 = `}<span className="resultat-calcul">9</span></p>
                 </div>
 
                 <div className="container-resultat-finale-methode">
