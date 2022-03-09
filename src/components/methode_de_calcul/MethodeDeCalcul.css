@@ -1,0 +1,34 @@
+.resultat-calcul{
+    font-size: large;
+    font-weight: 800;
+    color: red;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container-img-methode{
+       background-image: url('../../../public/assets/wave_.svg');
+       background-size: cover;
+       height: 250px;
+       background-repeat: no-repeat;
+       margin-bottom: 3rem;
+   }
+
+   .container-wave{
+       display: flex;
+       justify-content: center;
+   }
+
+   .container-title-methode{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 200px;
+   }
+}
+
+@media screen and (max-width: 415px) {
+
+
+}
