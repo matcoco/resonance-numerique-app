@@ -1,0 +1,43 @@
+
+.href-link{
+    word-wrap: break-word
+}
+
+
+@media screen and (max-width: 768px) {
+    .container-img-about{
+       background-image: url('../../../public/assets/wave_.svg');
+       background-size: cover;
+       height: 550px;
+       background-repeat: no-repeat;
+       margin-bottom: 3rem;
+   }
+
+   .container-infos-about{
+    position:relative;
+    background-color:#fff;
+    z-index: 100;
+    margin: auto 10%;
+    padding: 10px;
+    border-radius: 15px;
+    opacity: 0.97;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+   .container-wave{
+       display: flex;
+       justify-content: center;
+   }
+
+   .container-title-about{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 200px;
+   }
+}
+
+@media screen and (max-width: 415px) {
+
+
+}

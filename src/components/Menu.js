@@ -24,6 +24,9 @@ const Menu = () => {
                             <li className="nav-item">
                                 <NavLink to="/methode-de-calcul"><span className="nav-link" aria-current="page">Méthode de calcul</span></NavLink>
                             </li>
+                            <li className="nav-item">
+                                <NavLink to="/a-propos-du-site"><span className="nav-link" aria-current="page">A propos du site</span></NavLink>
+                            </li>
                         </ul>
                     </div>
                 </div>
