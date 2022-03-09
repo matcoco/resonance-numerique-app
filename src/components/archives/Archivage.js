@@ -2,11 +2,12 @@ import Menu from "../Menu"
 import ImgIllustration from "../imgComp/ImgIllustration"
 import { useContext, useEffect, useState } from "react";
 import { capitalize, saveToStorage } from "../../utils/Functions";
-import { sun_img, earth_img, lune_img, path_life_img } from "../const_img/const_img";
+import { sun_img, earth_img, lune_img } from "../const_img/const_img";
 import "./Archivage.css"
 import { DataContext } from "../States/context/DataContext";
 import { SET_BIRTH_DATE } from "../States/reducer/ActionsType";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify"
 
 const Archivage = () => {
     const [data, setData] = useState([])
@@ -27,6 +28,7 @@ const Archivage = () => {
         }
     }, [])
 
+
     const iconAndNumber = (number, path, text) => {
         return (
             <div className="container-iconNumber-archivage">
@@ -44,16 +46,15 @@ const Archivage = () => {
     const removeItemToStorage = (e) => {
         let id = +e.target.id
         const newData = data.filter((item, index) => index !== id)
-        setData(() => {
-            saveToStorage(newData)
-            return newData
-        })
+        setData(newData)
+        saveToStorage(newData)
+        toast.warn("Conjonture supprimée !", { closeOnClick: true, autoClose: 2000, })
     }
 
     const handleClickNavigateToItem = (id) => {
         let currentItem = data[id]
         dispatch({ type: SET_BIRTH_DATE, payload: currentItem })
-        navigate("/resultats", { state : { back: `archives`} })
+        navigate("/resultats", { state: { back: `archives` } })
     }
 
 
@@ -74,14 +75,15 @@ const Archivage = () => {
                                                 {iconAndNumber(item.soleil, sun_img, "soleil")}
                                                 {iconAndNumber(item.terre, earth_img, "terre")}
                                             </div>
-
                                             <div>
-                                                <button
-                                                    type="button"
-                                                    className="btn btn-danger"
-                                                    id={index}
-                                                    onClick={(e) => { removeItemToStorage(e) }}
-                                                >X</button>
+                                                
+                                                    <button
+                                                        type="button"
+                                                        className="btn btn-danger"
+                                                        id={index}
+                                                        onClick={(e) => { removeItemToStorage(e) }}
+                                                    >X</button>
+                                               
                                             </div>
                                         </div>
                                     )
