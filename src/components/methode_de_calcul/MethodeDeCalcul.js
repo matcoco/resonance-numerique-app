@@ -1,6 +1,7 @@
 import Menu from "../Menu"
 import ImgIllustration from "../imgComp/ImgIllustration"
 import "./MethodeDeCalcul.css"
+import Footer from "../footer/Footer"
 
 const MethodeDeCalcul = () => {
     return (
@@ -44,6 +45,7 @@ const MethodeDeCalcul = () => {
                     <p>Pour d'amples explications sur la résonance numérique, vous pouvez vous rendre sur le site de NUREA TV : <a target="_blank" rel="noreferrer" href="https://nurea.tv/?s=cyril">lien de la vidéo youtube</a></p>
                 </div>
             </div>
+            <Footer />
         </ImgIllustration>
 
 

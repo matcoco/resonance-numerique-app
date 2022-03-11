@@ -8,7 +8,7 @@ const Menu = () => {
                 <div className="container-fluid">
                     <span className="navbar-brand title">
                         <NavLink to="/">
-                            <span className="title-nav" aria-current="page">Resonance Numérique</span>
+                            <span className="title-nav" aria-current="page">Résonance Numérique</span>
                         </NavLink></span>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>

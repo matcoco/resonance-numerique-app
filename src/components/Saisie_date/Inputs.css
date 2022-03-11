@@ -8,6 +8,15 @@
     background-repeat: no-repeat;
 }
 
+
+
+.container-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
 .btn-inputs{
     padding: 1rem;
     background-color: #4E178D;
@@ -17,15 +26,22 @@
     border: none;
     font-size: 1.2rem;
     font-weight: 350;
+    margin-bottom: 3rem;
 }
 
-.container-inputs{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
+input{
+    padding: 0.5rem;
+    width: 50%;
+    margin-bottom: 1rem;
+    border: 5px solid rgba(241, 241, 241, 0.541);
+    font-size: 1.2rem;
 }
 
+@media screen and (min-width: 769px) {
+    input{
+        width: 20%;
+    }
+}
 
 
 @media screen and (max-width: 768px) {
@@ -36,13 +52,8 @@
         background-repeat: no-repeat;
     }
 
-
-    input{
-        padding: 0.5rem;
-        width: 50%;
-        margin-bottom: 1rem;
-        border: 5px solid rgba(241, 241, 241, 0.541);
-        font-size: 1.2rem;
+    .btn-inputs{
+        font-size: 1.5rem;
     }
 
     .container-wave{
@@ -63,5 +74,17 @@
        height: 350px;
        background-repeat: no-repeat;
    } 
+
+   input{
+        padding: 0.5rem;
+        width: 50%;
+        margin-bottom: 1rem;
+        border: 5px solid rgba(241, 241, 241, 0.541);
+        font-size: 1.2rem;
+    }
+
+    .btn-inputs{
+        font-size: 1.2rem;
+    }
 
 }

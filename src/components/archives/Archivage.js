@@ -8,6 +8,7 @@ import { DataContext } from "../States/context/DataContext";
 import { SET_BIRTH_DATE } from "../States/reducer/ActionsType";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify"
+import Footer from "../footer/Footer";
 
 const Archivage = () => {
     const [data, setData] = useState([])
@@ -96,9 +97,11 @@ const Archivage = () => {
                             :
                             <div className="no-data-save">pas de données</div>
                     }</div>
+                  
                 </div>
-
+              
             </ImgIllustration>
+            <Footer />
         </>
     )
 }

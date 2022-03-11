@@ -12,6 +12,7 @@ import Menu from "../Menu"
 import SaveResults from "../saveResults/SaveResults"
 import { lune_img, sun_img, earth_img, path_life_img } from "../const_img/const_img"
 import { useLocation } from "react-router-dom"
+import Footer from "../footer/Footer"
 
 const DisplayResults = () => {
 
@@ -59,6 +60,7 @@ const DisplayResults = () => {
                 </div>
             </ImgIllustration>
             {state?.back !== "archives" ? <SaveResults /> : null}
+            <Footer />
         </>
     )
 }

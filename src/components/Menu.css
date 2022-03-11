@@ -18,5 +18,31 @@
 .navbar-nav li a {
     font-family: 'Noto Serif Display', serif;
     font-weight: bolder;
-    font-size: large;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .title-nav{
+        font-family: 'Noto Serif Display', serif;
+        color: #52398d!important;
+        font-weight: 600;
+        font-size: 1.9rem;
+    }
+
+    .nav-link{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .nav-link{
+        font-size: large;
+    }
+
+    .title-nav{
+        font-size: 1.5rem;
+    }
+
 }
