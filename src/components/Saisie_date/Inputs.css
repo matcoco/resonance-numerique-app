@@ -1,11 +1,19 @@
-  .container-inputs-img{
+.container-inputs-img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('../../../public/assets/wave_.svg');
+    background-image: url('../../../public/assets/wave.png');
     background-size: cover;
     height: 750px;
     background-repeat: no-repeat;
+}
+
+
+
+.container-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .btn-inputs{
@@ -19,30 +27,45 @@
     font-weight: 350;
 }
 
-.container-inputs{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
+input{
+    padding: 0.5rem;
+    width: 50%;
+    margin-bottom: 1rem;
+    border: 5px solid rgba(241, 241, 241, 0.541);
+    font-size: 1.2rem;
 }
 
+
+/* au-dessus de 1025px */
+@media screen and (min-width: 1025px) {
+    input{
+        font-size: 1.3em;
+    }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+    input{
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        width: 40%;
+        margin-bottom: 1rem;
+        border: 5px solid rgba(241, 241, 241, 0.541);
+    }
+}
 
 
 @media screen and (max-width: 768px) {
      .container-inputs-background{
-        background-image: url('../../../public/assets/wave_.svg');
+        background-image: url('../../../public/assets/wave.png');
         background-size: cover;
         height: 550px;
         background-repeat: no-repeat;
     }
 
-
-    input{
-        padding: 0.5rem;
-        width: 50%;
-        margin-bottom: 1rem;
-        border: 5px solid rgba(241, 241, 241, 0.541);
-        font-size: 1.2rem;
+    .btn-inputs{
+        font-size: 1.5rem;
     }
 
     .container-wave{
@@ -54,14 +77,30 @@
         width: 60%;
     }
 
+    input{
+        font-size: 1.6rem;
+    }
+
 }
 
 @media screen and (max-width: 415px) {
     .container-inputs-background{
-       background-image: url('../../../public/assets/wave_.svg');
+       background-image: url('../../../public/assets/wave.png');
        background-size: cover;
        height: 350px;
        background-repeat: no-repeat;
    } 
+
+   input{
+        padding: 0.5rem;
+        width: 60%;
+        margin-bottom: 1rem;
+        border: 5px solid rgba(241, 241, 241, 0.541);
+        font-size: 1.2rem;
+    }
+
+    .btn-inputs{
+        font-size: 1.2rem;
+    }
 
 }

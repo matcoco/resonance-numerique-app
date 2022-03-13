@@ -5,7 +5,7 @@ import { useEffect, useState } from "react"
 import ImgIllustration from "./imgComp/ImgIllustration"
 import './DetailResults.css'
 import { useDataStatus } from "./NoResults"
-import Menu from "./Menu"
+
 
 const DetailsResultsPart = () => {
     const [definition, setDefinition] = useState("")
@@ -33,34 +33,35 @@ const DetailsResultsPart = () => {
 
     return (
         <>
-            <Menu />
-            <ImgIllustration classN={"container-img-displayResults"}>
-                <ArrowBack link="resultats" back={state.back}/>
-
-                <div className="container-detail-result-infos">
-                    <div className="container-div-detailPart">
-                        <div>
-                            <ResultPart
-                                img={state.img}
-                                number={state.number}
-                                text={state.text}
-                                alt={state.alt}
-                                type={state.type}
-                                classN='container-detailPart'
-                            />
-                        </div>
-                    </div>
-                    <div className="container-definition">
-                        <h3>Ce qu'on peut en dire</h3>
-                        <p>{definition}</p>
-                    </div>
-
-                    <div className="container-definition">
-                        <h3>Distorsion</h3>
-                        <p>{distorsion}</p>
-                    </div>
+            <ImgIllustration classN={"container-img-detailsResults"}>
+                <div className="container">
+                    <ArrowBack link="resultats" back={state.back} />
                 </div>
             </ImgIllustration>
+            <div className="container-detail-result-infos">
+                <div className="container-div-detailPart">
+                    <div>
+                        <ResultPart
+                            img={state.img}
+                            number={state.number}
+                            text={state.text}
+                            alt={state.alt}
+                            type={state.type}
+                            classN='container-detailPart'
+                        />
+                    </div>
+                </div>
+                <div className="container-definition">
+                    <h3>Ce qu'on peut en dire</h3>
+                    <p>{definition}</p>
+                </div>
+
+                <div className="container-definition">
+                    <h3>Distorsion</h3>
+                    <p>{distorsion}</p>
+                </div>
+            </div>
+
         </>
 
     )

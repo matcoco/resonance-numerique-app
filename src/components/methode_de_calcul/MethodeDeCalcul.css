@@ -1,34 +1,76 @@
-.resultat-calcul{
+ .resultat-calcul{
     font-size: large;
     font-weight: 800;
     color: red;
 }
 
+ h2{
+    color: rgb(59, 59, 59)!important;
+}
 
+.container-cheminDeVie-methode p,
+.container-conjoncture-methode p,
+.container-resultat-finale-methode p{
+    font-size: 1.3em;
+}
+
+.container-cheminDeVie-methode h2,
+.container-conjoncture-methode h2,
+.container-resultat-finale-methode h2
+.container-title-methode h1{
+    color: #6e406d!important;
+}
+
+.container-img-methode{
+    background-image: url('../../../public/assets/wave.png');
+    background-size: cover;
+    height: 250px;
+}
+
+.container-wave{
+    display: flex;
+    justify-content: center;
+}
+
+.container-title-methode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.section-calcul{
+    padding: 10px 0 10px 0;
+}
+
+/* au-dessus de 1025px */
+@media screen and (min-width: 1025px) {
+    .container-methode {
+        margin-top: 100px;
+    }
+
+    .container-img-methode{
+        background-image: url('../../../public/assets/wave_1025.svg');
+        height: 365px;
+    }
+}
+
+
+/* jusqu'à 1024px */
+ @media screen and (max-width: 1024px) {
+    .container-img-methode{
+        height: 420px;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .container-img-methode{
-       background-image: url('../../../public/assets/wave_.svg');
-       background-size: cover;
-       height: 250px;
-       background-repeat: no-repeat;
-       margin-bottom: 3rem;
-   }
+        height: 320px;
+    }
 
-   .container-wave{
-       display: flex;
-       justify-content: center;
-   }
-
-   .container-title-methode{
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       height: 200px;
-   }
 }
 
 @media screen and (max-width: 415px) {
 
 
-}
+} 

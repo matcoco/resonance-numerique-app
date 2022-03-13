@@ -24,8 +24,25 @@
     color: #444644;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1025px) {
 
+    .container-welcome {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    .container-date-welcome h3{
+        font-size:1.5em;
+    }
+
+    .container-welcome h2{
+        font-size:2em;
+    }
 
 }
 

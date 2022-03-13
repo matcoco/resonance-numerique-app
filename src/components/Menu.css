@@ -1,22 +1,85 @@
 .bg-light {
-    background-color: #f4e8dc!important;
+    background-color: #f28ca7!important;
 }
+
+.nav-link{
+   color: #464646!important;
+
+}
+
+.nav-link:hover{
+    /*  color: #464646!important; */
+    color: #fdfbff!important;
+ }
 
 .navbar-light .navbar-toggler {
-    color: rgba(236, 13, 13, 0.55)!important;
-    border-color: rgba(82,57,141,.1)!important;
+    color: #573d91!important;
+    border-color: rgba(21, 16, 32, 0.1)!important;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa');
 .title-nav{
-    font-family: 'Noto Serif Display', serif;
-    color: #52398d!important;
+    font-family: 'Comfortaa', serif;
+    color: #fff!important;
     font-weight: 600;
+    font-size: small;
 }
 
 
 .navbar-nav li a {
-    font-family: 'Noto Serif Display', serif;
+    font-family: 'Comfortaa', serif;
     font-weight: bolder;
-    font-size: large;
+}
+
+@media screen and (min-width: 1025px) {
+    .navbar-nav li a {
+        font-size: 1.1rem;
+    }
+
+    .title-nav{
+        font-size: 1.5rem;
+    }
+
+    .navbar-collapse {
+        flex :none;
+        margin-right: 10%;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar-nav li a {
+        font-size: 1.3rem;
+    }
+
+    .title-nav{
+        font-size: 1.5rem;
+    }
+
+    .navbar-collapse {
+        margin-right: 10%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .title-nav{
+        font-size: 1.9rem;
+    }
+
+    .nav-link{
+        font-size: 1.2rem;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+        margin-right: auto
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .title-nav{
+        font-size: 1.3rem;
+    }
+
 }

@@ -6,16 +6,68 @@
     margin: auto 10%;
     padding: 10px;
     border-radius: 15px;
-    top:20%;
+    bottom: 500px;
     opacity: 0.97;
 }
 
-@media screen and (max-width: 768px) {
-     .container-img-displayResults{
-        background-image: url('../../../public/assets/wave_.svg');
-        background-size: cover;
+.container-resultPart{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.illustration-results{
+    position:absolute;
+    margin-top: 80px;
+    width: 100%;
+    z-index: 1;
+}
+
+.container-img-detailsResults{
+    background-image: url('../../../public/assets/wave.png');
+    background-size: cover;
+    height: 800px;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1025px) {
+    .illustration-results{
+        width: 30%;
+    }
+
+    .container-part1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-result-infos{
+        margin: auto 30%;
+    }
+
+    .container-result-infos{
+        bottom: 449px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .illustration-results{
+        width: 80%;
+    }
+
+    .container-result-infos{
+        margin-top: 10rem;
+    }
+    .container-part1{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container-img-displayResults{
         height: 800px;
-        background-repeat: no-repeat;
     }
 
     .container-wave{
@@ -25,21 +77,18 @@
 
     .illustration-results{
         position:absolute;
-        margin-top: 80px;
+        margin-top: 170px;
         width: 100%;
         z-index: 1;
     }
 
-
-
+    
+    .container-result-infos{
+        margin-top: 9rem;
+    }
 }
 
 @media screen and (max-width: 415px) {
-    .container-resultPart{
-        display: flex;
-        padding: 1rem;
-        justify-content: center;
-        text-align: center;
-    }
+
 
 }

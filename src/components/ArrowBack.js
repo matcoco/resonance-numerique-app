@@ -16,7 +16,8 @@ const ArrowBack = ({ link, back }) => {
 
 const styles = {
     arrow: {
-        fontSize: "2rem"
+        fontSize: "2.5rem",
+        cursor: "pointer"
     },
     link: {
         textDecoration: "none"
