@@ -12,7 +12,7 @@ import Inputs from "./Saisie_date/Inputs";
 import { DataContext } from "./States/context/DataContext";
 import { Reducer } from "./States/reducer/Reducer";
 import { datas } from "./States/reducer/Reducer";
-import '../Routeur.css'
+import './Routeur.css'
 import Archivage from "./archives/Archivage";
 import React from 'react';
 import { ToastContainer } from 'react-toastify';
