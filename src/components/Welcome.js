@@ -7,8 +7,6 @@ const Welcome = ({ prenom, date, zodiac }) => {
             <div className="container-date-welcome">
                 <h3>{`${date} - ${zodiac}`}</h3>
             </div>
-
-
         </div>
     )
 }

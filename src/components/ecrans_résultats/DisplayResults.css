@@ -14,9 +14,36 @@
     pointer-events: none;
 }
 
+.container-img-displayResults{
+    background-image: url('../../../public/assets/wave.png')!important;
+    background-size: cover;
+    height: 250px;
+}
+
+
+.container-resultPart{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1025px) {
+    .container-img-displayResults{
+        background-image: url('../../../public/assets/wave_1025.svg')!important;
+        background-size: cover;
+        height: 796px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container-img-displayResults {
+        height: 753px;
+    }
+}
 
 
 @media screen and (max-width: 768px) {
+    .container-img-displayResults {
+        height: 717px;
+    }
 }
 
 @media screen and (max-width: 415px) {

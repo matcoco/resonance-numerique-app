@@ -1,4 +1,4 @@
-import Menu from "../Menu"
+
 import ImgIllustration from "../imgComp/ImgIllustration"
 import { useContext, useEffect, useState } from "react";
 import { capitalize, saveToStorage } from "../../utils/Functions";
@@ -8,7 +8,6 @@ import { DataContext } from "../States/context/DataContext";
 import { SET_BIRTH_DATE } from "../States/reducer/ActionsType";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify"
-import Footer from "../footer/Footer";
 
 const Archivage = () => {
     const [data, setData] = useState([])
@@ -56,16 +55,14 @@ const Archivage = () => {
 
     return (
         <>
-            <Menu />
             <ImgIllustration classN={"container-img-save"}>
                 <div className="container-main-archives">
-                    <div>
-                        <h1 className="h1 container-title-methode">conjonctures enregistrées</h1>
-                    </div>
                     <div>                {
                         data.length > 0 ?
                             <div className="container-save-infos" >
-
+                                <div className="container-title-archive">
+                                    <h1 className="">Archives</h1>
+                                </div>
                                 {
                                     data.map((item, index) => {
                                         return (
@@ -95,13 +92,15 @@ const Archivage = () => {
                                 }
                             </div>
                             :
-                            <div className="no-data-save">pas de données</div>
+                            <div className="container-save-infos">
+                                <div className="no-data-save">pas de données</div>
+                            </div>
+
                     }</div>
-                  
+
                 </div>
-              
+
             </ImgIllustration>
-            <Footer />
         </>
     )
 }

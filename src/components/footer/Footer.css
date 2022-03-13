@@ -1,10 +1,10 @@
 .container-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100px;
-    background-color: rgb(59, 59, 59);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 2em;
 }
+
 
 @media screen and (max-width: 768px) {
 
@@ -16,6 +16,7 @@
 @media screen and (max-width: 415px) {
 
     footer span{
-        font-size: large;
+        font-size: medium;
     }
-}
+} 
+

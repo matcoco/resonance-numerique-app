@@ -8,11 +8,9 @@ import ImgIllustration from "../imgComp/ImgIllustration"
 import Welcome from "../Welcome"
 import { capitalize } from "../../utils/Functions.js"
 import { useDataStatus } from "../NoResults.js"
-import Menu from "../Menu"
 import SaveResults from "../saveResults/SaveResults"
 import { lune_img, sun_img, earth_img, path_life_img } from "../const_img/const_img"
 import { useLocation } from "react-router-dom"
-import Footer from "../footer/Footer"
 
 const DisplayResults = () => {
 
@@ -36,31 +34,34 @@ const DisplayResults = () => {
 
     return (
         <>
-            <Menu />
             <ImgIllustration classN={"container-img-displayResults"}>
-                <ArrowBack link={back} />
-                <ImgIllustration classN="container-illustration-display">
-                    <img className="illustration-results" src={zodiacImgPath} alt="illustration aquarius zodiac" />
-                </ImgIllustration>
-                <Welcome
-                    prenom={capitalize(prenom)}
-                    date={date}
-                    zodiac={zodiac}
-                />
-
-                <div className="container-result-infos">
-                    <div className="container-cheminDeVie">
-                        <ResultPart img={path_life_img} number={cheminDeVie} text="Chemin de vie..." alt="illustration d'une route à 2 chemins" classN="container-resultPart" />
-                    </div>
-                    <div>
-                        <ResultPart img={lune_img} number={lune} text="Je pense..." alt="illustration de la Lune" type="lune" classN="container-resultPart" back={back} />
-                        <ResultPart img={sun_img} number={soleil} text="Je suis..." alt="illustration du Soleil" type="soleil" classN="container-resultPart" back={back} />
-                        <ResultPart img={earth_img} number={terre} text="Je fais..." alt="illustration de la Terre" type="terre" classN="container-resultPart" back={back} />
-                    </div>
+                <div className="container">
+                    <ArrowBack link={back} />
                 </div>
+
+                <div className="container-part1 pt-5">
+                    <img className="illustration-results" src={zodiacImgPath} alt="illustration aquarius zodiac" />
+                    <Welcome
+                        prenom={capitalize(prenom)}
+                        date={date}
+                        zodiac={zodiac}
+                    />
+                </div>
+
             </ImgIllustration>
-            {state?.back !== "archives" ? <SaveResults /> : null}
-            <Footer />
+            <div className="container-result-infos">
+                <div className="container-cheminDeVie">
+                    <ResultPart img={path_life_img} number={cheminDeVie} text="Chemin de vie..." alt="illustration d'une route à 2 chemins" classN="container-resultPart" />
+                </div>
+                <div>
+                    <ResultPart img={lune_img} number={lune} text="Je pense..." alt="illustration de la Lune" type="lune" classN="container-resultPart" back={back} />
+                    <ResultPart img={sun_img} number={soleil} text="Je suis..." alt="illustration du Soleil" type="soleil" classN="container-resultPart" back={back} />
+                    <ResultPart img={earth_img} number={terre} text="Je fais..." alt="illustration de la Terre" type="terre" classN="container-resultPart" back={back} />
+                </div>
+                {state?.back !== "archives" ? <SaveResults /> : null}
+            </div>
+
+        
         </>
     )
 }

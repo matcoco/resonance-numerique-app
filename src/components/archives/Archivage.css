@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa');
+
 .container-iconNumber-archivage{
     display: flex;
     justify-content:center;
@@ -7,17 +9,31 @@
     display: flex;
     flex-direction: column;
     align-items: baseline;
+    cursor: pointer;
+    margin-right: 20px;
 }
 
 .numbers-archives{
     display: flex;
 }
 
-.container-main-archives{
-    min-height: 100vh;
+
+
+.container-title-archive{
+    font-family: 'Comfortaa', 'cursive';
     display: flex;
-    flex-direction: column;
+    color: #464646!important;
 }
+
+.container-img-save{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../../public/assets/wave.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 .container-archivage{
     display: flex;
@@ -37,7 +53,10 @@
     border-radius: 15px;
     opacity: 0.97;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 32px;
+    margin-bottom: 232px;
 }
+
 .no-data-save{
     text-align: center;
     font-size: larger;
@@ -49,16 +68,37 @@
     display: flex;
     align-items: flex-end;
 }
+@media screen and (min-width: 1025px) {
+    .container-main-archives {
+        top: 130px;
+        position: relative;
+        width: 30%;
+    }
+    
+
+    .container-img-save{
+        background-image: url('../../../public/assets/wave_1025.svg');
+        height: 362px;
+    }
+
+    .container-save-infos{
+        margin-bottom: 232px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container-save-infos {
+        margin-bottom: 50px;
+    }
+    
+    .container-main-archives {
+        top: 90px;
+        position: relative;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
-    .container-img-save{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: url('../../../public/assets/wave_.svg');
-        background-size: cover;
-        background-repeat: no-repeat;
-   }
 
    .prenom-archive{
        font-size: larger;
@@ -70,6 +110,20 @@
        align-items: center;
        margin-bottom: 0px;
    }
+
+   .container-save-infos {
+        margin-bottom: 250px;
+    }
+
+    .container-main-archives {
+        top: 90px;
+        position: relative;
+    }
+
+    .container-img-save{
+        background-image: url('../../../public/assets/wave.png');
+        height: 362px;
+    }
 
 }
 

@@ -1,4 +1,4 @@
-import { useContext, useRef } from "react"
+import { useContext, useLayoutEffect, useRef } from "react"
 import { DataContext } from "../States/context/DataContext"
 import { SET_BIRTH_DATE } from "../States/reducer/ActionsType"
 import Numerologie from "../../utils/Calcul.js"
@@ -125,7 +125,7 @@ const Inputs = () => {
             zodiacSign = zodiac.getSignByDate({ day: jour, month: mois })
             infos = new Numerologie(current_prenom.current.value, date)
             zodiac_infos = checkZodiacImg(zodiacSign)
-            
+
             dispatch({ type: SET_BIRTH_DATE, payload: { ...infos, zodiacImgPath: zodiac_infos.path, zodiac: zodiac_infos.fr } })
             resetInputs()
             navigate("/resultats", {})
@@ -151,12 +151,16 @@ const Inputs = () => {
         current_date.current.value = ""
     }
 
+    useLayoutEffect(() => {
+        current_date.current.value = "2001-09-11"
+    })
+
     return (
 
         <div className="container-inputs">
             <input ref={current_prenom} type="text" placeholder="prénom" required />
-            <input ref={current_date} type="date" required />
-            <button className="btn-inputs" type="button" onClick={handleClickDate}>C'est parti !</button>
+            <input ref={current_date} type="date" defaultValue={current_date.current} required />
+            <button className="btn-inputs" type="button" onClick={handleClickDate} >C'est parti !</button>
         </div>
 
     )

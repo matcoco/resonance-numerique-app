@@ -1,8 +1,8 @@
-  .container-inputs-img{
+.container-inputs-img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('../../../public/assets/wave_.svg');
+    background-image: url('../../../public/assets/wave.png');
     background-size: cover;
     height: 750px;
     background-repeat: no-repeat;
@@ -14,7 +14,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  
 }
 
 .btn-inputs{
@@ -26,7 +25,6 @@
     border: none;
     font-size: 1.2rem;
     font-weight: 350;
-    margin-bottom: 3rem;
 }
 
 input{
@@ -37,16 +35,30 @@ input{
     font-size: 1.2rem;
 }
 
-@media screen and (min-width: 769px) {
+
+/* au-dessus de 1025px */
+@media screen and (min-width: 1025px) {
     input{
-        width: 20%;
+        font-size: 1.3em;
+    }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+    input{
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        width: 40%;
+        margin-bottom: 1rem;
+        border: 5px solid rgba(241, 241, 241, 0.541);
     }
 }
 
 
 @media screen and (max-width: 768px) {
      .container-inputs-background{
-        background-image: url('../../../public/assets/wave_.svg');
+        background-image: url('../../../public/assets/wave.png');
         background-size: cover;
         height: 550px;
         background-repeat: no-repeat;
@@ -65,11 +77,15 @@ input{
         width: 60%;
     }
 
+    input{
+        font-size: 1.6rem;
+    }
+
 }
 
 @media screen and (max-width: 415px) {
     .container-inputs-background{
-       background-image: url('../../../public/assets/wave_.svg');
+       background-image: url('../../../public/assets/wave.png');
        background-size: cover;
        height: 350px;
        background-repeat: no-repeat;
@@ -77,7 +93,7 @@ input{
 
    input{
         padding: 0.5rem;
-        width: 50%;
+        width: 60%;
         margin-bottom: 1rem;
         border: 5px solid rgba(241, 241, 241, 0.541);
         font-size: 1.2rem;
