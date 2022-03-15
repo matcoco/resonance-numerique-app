@@ -5,6 +5,7 @@ import { saveToStorage } from "../../utils/Functions"
 import { toast } from "react-toastify"
 
 const SaveResults = () => {
+    const uri = process.env.REACT_APP_URI
     const { state } = useContext(DataContext)
 
     const handleClickSave = () => {
@@ -28,7 +29,7 @@ const SaveResults = () => {
     return (
         <div className="container-save">
             <button className="btn-save" onClick={handleClickSave}>
-                <img className="icon-save-results" src="/assets/save.png" alt="disquette de sauvegarde" />
+                <img className="icon-save-results" src={uri + "/assets/save.png"} alt="disquette de sauvegarde" />
             </button>
         </div>
     )
