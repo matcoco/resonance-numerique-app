@@ -1,0 +1,44 @@
+
+
+.container-home{
+    text-align: center;
+    background-image: url('../../../public/assets/wave.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* au-dessus de 1367px */
+@media screen and (min-width: 1025px) {
+    .container-home{
+        background-image: url('../../../public/assets/wave_1025.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .illustration-home{
+        margin-top: 1rem;
+        max-width: 15%;
+    }
+}
+
+
+/* jusqu'à 1024px */
+ @media screen and (max-width: 1024px) {
+
+}
+
+/* jusqu'à de 768px */
+@media screen and (min-width: 416px) and (max-width: 767px){
+
+
+}
+
+/* jusqu'à de 415px */
+@media screen and (max-width: 415px) {
+
+    .illustration-home{
+        width: 40%;
+    }
+    
+}

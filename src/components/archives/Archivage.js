@@ -32,8 +32,12 @@ const Archivage = () => {
     const iconAndNumber = (number, path, text) => {
         return (
             <div className="container-iconNumber-archivage">
-                <img src={path} alt={text} />
-                <p className="number-conjoncture">{number}</p>
+                <div className="container-icon">
+                    <img src={path} alt={text} />
+                </div>
+                <div className="container-number-conjoncture">
+                    <p className="number-conjoncture">{number}</p>
+                </div>
             </div>
         )
     }
@@ -55,52 +59,52 @@ const Archivage = () => {
 
     return (
         <>
-            <ImgIllustration classN={"container-img-save"}>
-                <div className="container-main-archives">
-                    <div>                {
-                        data.length > 0 ?
-                            <div className="container-save-infos" >
-                                <div className="container-title-archive">
-                                    <h1 className="">Archives</h1>
-                                </div>
-                                {
-                                    data.map((item, index) => {
-                                        return (
-                                            <div key={index} className="container-archivage">
-                                                <div className="container-archivage-line" onClick={() => { handleClickNavigateToItem(index) }}>
-                                                    <div className="d-flex justify-content-center">
-                                                        <span className="prenom-archive">{capitalize(item.prenom)}</span>
-                                                    </div>
-                                                    <div className="numbers-archives">
-                                                        {iconAndNumber(item.lune, lune_img, "lune")}
-                                                        {iconAndNumber(item.soleil, sun_img, "soleil")}
-                                                        {iconAndNumber(item.terre, earth_img, "terre")}
-                                                    </div>
-                                                </div>
-                                                <div className="container-btn-archive">
-                                                    <button
-                                                        type="button"
-                                                        className="btn btn-danger"
-                                                        id={index}
-                                                        onClick={(e) => { removeItemToStorage(e) }}
-                                                    >X</button>
+            <ImgIllustration />
 
+            <div className="container container-main-archives">
+                <>                {
+                    data.length > 0 ?
+                        <div className="container-save-infos" >
+                            <div className="container-title-archive">
+                                <h1 className="">Archives</h1>
+                            </div>
+                            {
+                                data.map((item, index) => {
+                                    return (
+                                        <div key={index} className="container-archivage">
+                                            <div className="container-archivage-line" onClick={() => { handleClickNavigateToItem(index) }}>
+                                                <div className="d-flex justify-content-center">
+                                                    <span className="prenom-archive">{capitalize(item.prenom)}</span>
+                                                </div>
+                                                <div className="numbers-archives">
+                                                    {iconAndNumber(item.lune, lune_img, "lune")}
+                                                    {iconAndNumber(item.soleil, sun_img, "soleil")}
+                                                    {iconAndNumber(item.terre, earth_img, "terre")}
                                                 </div>
                                             </div>
-                                        )
-                                    })
-                                }
-                            </div>
-                            :
-                            <div className="container-save-infos">
-                                <div className="no-data-save">pas de données</div>
-                            </div>
+                                            <div className="container-btn-archive">
+                                                <button
+                                                    type="button"
+                                                    className="btn btn-danger"
+                                                    id={index}
+                                                    onClick={(e) => { removeItemToStorage(e) }}
+                                                >X</button>
 
-                    }</div>
+                                            </div>
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
+                        :
+                        <div className="container-no-data">
+                            <div className="no-data-save">pas de données</div>
+                        </div>
 
-                </div>
+                }</>
 
-            </ImgIllustration>
+            </div>
+
         </>
     )
 }

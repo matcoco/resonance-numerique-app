@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa');
+
+.container-mentions-legales{
+    position:relative;
+    background-color:#fff;
+    z-index: 100;
+    padding: 5%;
+    border-radius: 15px;
+    opacity: 0.97;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Comfortaa, Courier New, Courier, monospace';
+}
+
+
+.mention-text p {
+    color: rgb(100, 100, 100);
+}
+
+@media screen and (min-width: 1367px) {
+    .container-img-about{
+        background-image: url('../../../public/assets/wave_1025.svg');
+    }
+
+    .mention-text p {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+
+    .container-img-about{
+        background-image: url('../../../public/assets/wave_1025.svg');
+    }
+
+    .mention-text p {
+        font-size: 1.3rem;
+    }
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .mention-text p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 416px) and (max-width: 768px) {
+    .mention-text p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .mention-text p {
+        font-size: 1.1rem;
+    }
+}

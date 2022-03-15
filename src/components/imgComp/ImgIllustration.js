@@ -1,8 +1,10 @@
+import './ImgComp.css'
 
-const ImgIllustration = ({ children, classN }) => {
+const ImgIllustration = () => {
+    
     return (
-        <div className={classN}>
-            {children}
+        <div className="container-home">
+            <img className="illustration-home" src="/assets/illustration_.svg" alt="background header" />
         </div>
     )
 }
