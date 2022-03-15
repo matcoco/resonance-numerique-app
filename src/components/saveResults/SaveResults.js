@@ -29,7 +29,7 @@ const SaveResults = () => {
     return (
         <div className="container-save">
             <button className="btn-save" onClick={handleClickSave}>
-                <img className="icon-save-results" src={uri + "/assets/save.png"} alt="disquette de sauvegarde" />
+                <img className="icon-save-results" src={uri + "assets/save.png"} alt="disquette de sauvegarde" />
             </button>
         </div>
     )

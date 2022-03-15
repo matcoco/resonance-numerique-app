@@ -26,6 +26,7 @@ import MentionLegal from "./mentions_legale/MentionLegale";
 const Routeur = () => {
   const uri = process.env.REACT_APP_URI;
   const [state, dispatch] = useReducer(Reducer, datas)
+  console.log(uri)
   return (
     <DataContext.Provider value={{ state, dispatch }}>
       <BrowserRouter>
@@ -34,13 +35,13 @@ const Routeur = () => {
           <div className="content-wrap">
             <Routes>
               <Route path={uri} element={<Home />}></Route>
-              <Route path={uri +"/archives"} element={<Archivage />}></Route>
-              <Route path={uri +"/birth-date"} element={<Inputs />}></Route>
-              <Route path={uri +"/resultats"} element={<DisplayResults />}></Route>
-              <Route path={uri +"/resultats/:type"} element={<DetailsResultsPart />}></Route>
-              <Route path={uri +"/methode-de-calcul"} element={<MethodeDeCalcul />}></Route>
-              <Route path={uri +"/a-propos-du-site"} element={<About />}></Route>
-              <Route path={uri +"/mentions-legales"} element={<MentionLegal />}></Route>
+              <Route path={uri +"archives"} element={<Archivage />}></Route>
+              <Route path={uri +"birth-date"} element={<Inputs />}></Route>
+              <Route path={uri +"resultats"} element={<DisplayResults />}></Route>
+              <Route path={uri +"resultats/:type"} element={<DetailsResultsPart />}></Route>
+              <Route path={uri +"methode-de-calcul"} element={<MethodeDeCalcul />}></Route>
+              <Route path={uri +"a-propos-du-site"} element={<About />}></Route>
+              <Route path={uri +"mentions-legales"} element={<MentionLegal />}></Route>
             </Routes>
           </div>
           <Footer />
