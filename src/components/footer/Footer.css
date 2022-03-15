@@ -5,6 +5,10 @@
     padding: 2em;
 }
 
+.link-github{
+    color: #b17eeb;
+}
+
 
 @media screen and (max-width: 768px) {
 

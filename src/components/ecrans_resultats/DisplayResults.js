@@ -56,7 +56,7 @@ const DisplayResults = () => {
                     <div className="container-cheminDeVie">
                         <ResultPart img={path_life_img} number={cheminDeVie} text="Chemin de vie..." alt="illustration d'une route à 2 chemins" classN="container-resultPart" />
                     </div>
-                    <div className="container-resultPart">
+                    <div className="container-results">
                         <ResultPart img={lune_img} number={lune} text="Je pense..." alt="illustration de la Lune" type="lune" classN="container-resultPart" back={back} />
                         <ResultPart img={sun_img} number={soleil} text="Je suis..." alt="illustration du Soleil" type="soleil" classN="container-resultPart" back={back} />
                         <ResultPart img={earth_img} number={terre} text="Je fais..." alt="illustration de la Terre" type="terre" classN="container-resultPart" back={back} />
