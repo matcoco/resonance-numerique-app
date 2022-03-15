@@ -6,7 +6,7 @@ import {
   Route
 } from "react-router-dom";
 import DetailsResultsPart from "./DetailsResultParts";
-import DisplayResults from "./ecrans_résultats/DisplayResults";
+import DisplayResults from "./ecrans_resultats/DisplayResults";
 import Home from "./home/Home";
 import Inputs from "./Saisie_date/Inputs";
 import { DataContext } from "./States/context/DataContext";
@@ -21,6 +21,7 @@ import MethodeDeCalcul from "./methode_de_calcul/MethodeDeCalcul";
 import About from "./about/About";
 import Menu from "./Menu";
 import Footer from "./footer/Footer";
+import MentionLegal from "./mentions_legale/MentionLegale";
 
 const Routeur = () => {
   const [state, dispatch] = useReducer(Reducer, datas)
@@ -38,6 +39,7 @@ const Routeur = () => {
               <Route path="/resultats/:type" element={<DetailsResultsPart />}></Route>
               <Route path="/methode-de-calcul" element={<MethodeDeCalcul />}></Route>
               <Route path="/a-propos-du-site" element={<About />}></Route>
+              <Route path="/mentions-legales" element={<MentionLegal />}></Route>
             </Routes>
           </div>
           <Footer />

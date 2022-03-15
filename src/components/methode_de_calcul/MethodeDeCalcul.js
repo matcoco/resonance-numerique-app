@@ -5,11 +5,11 @@ import "./MethodeDeCalcul.css"
 const MethodeDeCalcul = () => {
     return (
         <>
-            <ImgIllustration classN={"container-img-methode"}>
-                <div className="container-title-methode">
+            <ImgIllustration />
+
+            <div className="container-title-methode">
                     <h1>La méthode de calcul</h1>
                 </div>
-            </ImgIllustration>
             <div className="container container-methode">
                 <div className="container-cheminDeVie-methode pb-3">
                     <h2>Calcul du chemin de vie</h2>
@@ -42,7 +42,7 @@ const MethodeDeCalcul = () => {
 
                 </div>
 
-                <div className="container-resultat-finale-methode pb-3">
+                <div className="container-resultat-finale-methode pb-5">
                     <h2>RESULTAT</h2>
                     <p>Ma conjoncture est finalement calculée</p>
                     <p>Lune <span className="resultat-calcul">2</span> - Soleil <span className="resultat-calcul">4</span> - Terre <span className="resultat-calcul">9</span></p>

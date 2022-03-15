@@ -7,9 +7,7 @@
 .container-img-about{
     background-image: url('../../../public/assets/wave.png');
     background-size: cover;
-    height: 550px;
     background-repeat: no-repeat;
-    margin-bottom: 3rem;
 }
 
 .container-infos-about{
@@ -21,33 +19,27 @@
     border-radius: 15px;
     opacity: 0.97;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    bottom:300px
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 1025px) {
-    .container-infos-about{
-        margin: auto 30%;
-        bottom: 500px
-    }
 
     .text{
         font-size: 1.3em;
     }
+
     .container-img-about{
         background-image: url('../../../public/assets/wave_1025.svg');
-        height: 550px;
-        margin-bottom: 3rem;
     }
     
 }
 
-@media screen and (max-width: 1024px) {
-    .container-img-about{
-        height: 420px;
-    }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 416px) and (max-width: 768px) {
 
     .text{
         font-size: 1.5em;
@@ -62,7 +54,6 @@
        display: flex;
        justify-content: center;
        align-items: center;
-       height: 200px;
    }
 }
 

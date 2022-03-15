@@ -4,9 +4,7 @@
     color: red;
 }
 
- h2{
-    color: rgb(59, 59, 59)!important;
-}
+
 
 .container-cheminDeVie-methode p,
 .container-conjoncture-methode p,
@@ -14,17 +12,19 @@
     font-size: 1.3em;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
 .container-cheminDeVie-methode h2,
 .container-conjoncture-methode h2,
-.container-resultat-finale-methode h2
+.container-resultat-finale-methode h2,
 .container-title-methode h1{
     color: #6e406d!important;
+    font-family: 'Oswald', sans-serif;
 }
 
 .container-img-methode{
     background-image: url('../../../public/assets/wave.png');
     background-size: cover;
-    height: 250px;
+  
 }
 
 .container-wave{
@@ -36,7 +36,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    padding: 2rem;
+    margin-bottom: 3rem;
 }
 
 .section-calcul{
@@ -44,29 +45,21 @@
 }
 
 /* au-dessus de 1025px */
-@media screen and (min-width: 1025px) {
-    .container-methode {
-        margin-top: 100px;
-    }
+@media screen and (min-width: 1025px) and (min-width: 1025px) {
 
     .container-img-methode{
         background-image: url('../../../public/assets/wave_1025.svg');
-        height: 365px;
     }
 }
 
 
 /* jusqu'à 1024px */
- @media screen and (max-width: 1024px) {
-    .container-img-methode{
-        height: 420px;
-    }
+ @media screen and (max-width: 769px) and (max-width: 1024px) {
+
 }
 
-@media screen and (max-width: 768px) {
-    .container-img-methode{
-        height: 320px;
-    }
+@media screen and (min-width: 416px) and (max-width: 768px) {
+
 
 }
 

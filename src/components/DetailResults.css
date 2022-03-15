@@ -3,11 +3,12 @@
     position:relative;
     background-color:#fff;
     z-index: 100;
-    margin: auto 10%;
     padding: 30px;
     border-radius: 15px;
-    bottom: 700px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    opacity: 0.96;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .container-definition{
@@ -31,42 +32,22 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 3px 2px;
 }
 
-.container-illustration-display{
-    margin-top: 2rem;
-}
 
 @media screen and (min-width: 1025px) {
     .container-detail-result-infos{
-        margin: auto 30%;
-        bottom: 600px;
+        width:50%;
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
 }
 
-@media screen and (max-width: 768px) {
-    .container-img-displayResults{
-       background-image: url('../../public/assets/wave.png');
-       background-size: cover;
-       height: 150px;
-       background-repeat: no-repeat;
-   }
+@media screen and (min-width: 415px) and (max-width: 767px) {
 
-   .container-wave{
-       display: flex;
-       justify-content: center;
-   }
-
-   .illustration-results{
-       position:absolute;
-       width: 100%;
-       z-index: 1;
-   }
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 414px) {
 
 
 }

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="transition duration-300 ease-in-out delay-150" viewBox="0 0 1440 600" xmlns="http://www.w3.org/2000/svg">
+<path class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(180 720 300)" d="m0 600v-450c107.79-15.598 215.58-31.196 303-15s154.47 64.187 263 61c108.53-3.1866 258.53-57.55 347-66 88.474-8.4498 115.42 29.014 193 40s205.79-4.5072 334-20v450z" fill="#f78da766" stroke-width="0"/>
+<path class="transition-all duration-300 ease-in-out delay-150 path-1" transform="rotate(180 720 300)" d="m0 600v-300c85.866-16.038 171.73-32.077 278-17 106.27 15.077 232.94 61.268 340 56 107.06-5.2679 194.52-61.995 288-83 93.483-21.005 193-6.2871 283 7 90.005 13.287 170.5 25.144 251 37v300z" fill="#f78da788" stroke-width="0"/>
+<path class="transition-all duration-300 ease-in-out delay-150 path-2" transform="rotate(180 720 300)" d="m0 600v-150c91.722 0.4689 183.44 0.9378 295 8s242.94 20.718 325 13 114.78-36.809 196-33 210.92 40.517 323 48 206.54-14.258 301-36v150z" fill="#f78da7ff" stroke-width="0"/>
+</svg>

@@ -9,11 +9,12 @@ const ResultPart = ({ img, number, text, alt, type, classN, back }) => {
                 <img src={img} alt={alt} />
             </div>
             <div>
-                <h2>{number}</h2>
-                <h3>{text}</h3>
+                <h2 className="number-conjoncture">{number}</h2>
+                <h3 className="text-conjoncture">{text}</h3>
             </div>
         </div>
     )
 }
+
 
 export default ResultPart

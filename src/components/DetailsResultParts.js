@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom"
-import ResultPart from "./ecrans_résultats/ResultPart"
+import ResultPart from "./ecrans_resultats/ResultPart"
 import ArrowBack from "./ArrowBack"
 import { useEffect, useState } from "react"
 import ImgIllustration from "./imgComp/ImgIllustration"
@@ -33,12 +33,12 @@ const DetailsResultsPart = () => {
 
     return (
         <>
-            <ImgIllustration classN={"container-img-detailsResults"}>
+            <ImgIllustration display />
+
+            <div className="container container-detail-result-infos">
                 <div className="container">
                     <ArrowBack link="resultats" back={state.back} />
                 </div>
-            </ImgIllustration>
-            <div className="container-detail-result-infos">
                 <div className="container-div-detailPart">
                     <div>
                         <ResultPart
