@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom"
 
 const ResultPart = ({ img, number, text, alt, type, classN, back }) => {
     const navigate = useNavigate();
+  
     return (
 
         <div className={classN} onClick={() => navigate(`/resultats/${type}`, { state: { number, type, text, img, alt, back } })}>
