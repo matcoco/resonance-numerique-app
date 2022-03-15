@@ -54,7 +54,7 @@ const Archivage = () => {
     const handleClickNavigateToItem = (id) => {
         let currentItem = data[id]
         dispatch({ type: SET_BIRTH_DATE, payload: currentItem })
-        navigate("/resultats", { state: { back: `archives` } })
+        navigate(uri + "resultats", { state: { back: `archives` } })
     }
 
 
