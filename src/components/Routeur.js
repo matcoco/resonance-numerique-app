@@ -26,15 +26,16 @@ import MentionLegal from "./mentions_legale/MentionLegale";
 const Routeur = () => {
   const uri = process.env.REACT_APP_URI;
   const [state, dispatch] = useReducer(Reducer, datas)
+
   console.log(uri)
   return (
     <DataContext.Provider value={{ state, dispatch }}>
-      <BrowserRouter>
+      <BrowserRouter basename={uri}>
         <Menu />
         <div className="page-container">
           <div className="content-wrap">
             <Routes>
-              <Route path={uri} exact element={<Home />}></Route>
+              <Route path="/" exact element={<Home />}></Route>
               <Route path={uri +"archives"} element={<Archivage />}></Route>
               <Route path={uri +"birth-date"} element={<Inputs />}></Route>
               <Route path={uri +"resultats"} element={<DisplayResults />}></Route>
