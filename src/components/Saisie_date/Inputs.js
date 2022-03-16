@@ -158,8 +158,13 @@ const Inputs = () => {
     return (
 
         <div className="container-inputs">
-            <input ref={current_prenom} type="text" placeholder="prénom" required />
-            <input ref={current_date} type="date" defaultValue={current_date.current} required />
+            <label>
+                <input ref={current_prenom} type="text" placeholder="prénom" required />
+            </label>
+            <label>
+                <input ref={current_date} type="date" defaultValue={current_date.current} required />
+            </label>
+            
             <button className="btn-inputs" type="button" onClick={handleClickDate} >C'est parti !</button>
         </div>
 
