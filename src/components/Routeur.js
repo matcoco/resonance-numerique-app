@@ -34,7 +34,7 @@ const Routeur = () => {
         <div className="page-container">
           <div className="content-wrap">
             <Routes>
-              <Route path={uri} element={<Home />}></Route>
+              <Route path={uri} exact element={<Home />}></Route>
               <Route path={uri +"archives"} element={<Archivage />}></Route>
               <Route path={uri +"birth-date"} element={<Inputs />}></Route>
               <Route path={uri +"resultats"} element={<DisplayResults />}></Route>
