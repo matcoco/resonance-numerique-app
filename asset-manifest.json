@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/resonance-numerique-app/static/css/main.0939e574.css",
-    "main.js": "/resonance-numerique-app/static/js/main.298abd90.js",
+    "main.js": "/resonance-numerique-app/static/js/main.f7706036.js",
     "static/js/787.978e6670.chunk.js": "/resonance-numerique-app/static/js/787.978e6670.chunk.js",
     "static/media/wave.png": "/resonance-numerique-app/static/media/wave.b729d7934f6323a5d12a.png",
     "index.html": "/resonance-numerique-app/index.html",
     "static/media/wave.svg": "/resonance-numerique-app/static/media/wave.ea2a11b2405282ed085e.svg",
     "static/media/wave_1025.svg": "/resonance-numerique-app/static/media/wave_1025.b834bb0f8d59620bd715.svg",
     "main.0939e574.css.map": "/resonance-numerique-app/static/css/main.0939e574.css.map",
-    "main.298abd90.js.map": "/resonance-numerique-app/static/js/main.298abd90.js.map",
+    "main.f7706036.js.map": "/resonance-numerique-app/static/js/main.f7706036.js.map",
     "787.978e6670.chunk.js.map": "/resonance-numerique-app/static/js/787.978e6670.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0939e574.css",
-    "static/js/main.298abd90.js"
+    "static/js/main.f7706036.js"
   ]
 }
