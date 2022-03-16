@@ -1,9 +1,9 @@
 
 import { useReducer } from "react";
 import {
-  HashRouter,
   Routes,
-  Route
+  Route,
+  BrowserRouter
 } from "react-router-dom";
 import DetailsResultsPart from "./DetailsResultParts";
 import DisplayResults from "./ecrans_resultats/DisplayResults";
@@ -29,7 +29,7 @@ const Routeur = () => {
 
   return (
     <DataContext.Provider value={{ state, dispatch }}>
-      <HashRouter>
+      <BrowserRouter>
         <Menu />
         <div className="page-container">
           <div className="content-wrap">
@@ -47,7 +47,7 @@ const Routeur = () => {
           <Footer />
         </div>
         <ToastContainer />
-      </HashRouter>
+      </BrowserRouter>
     </DataContext.Provider >
   )
 }
