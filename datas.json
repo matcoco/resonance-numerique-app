@@ -1,11 +1,11 @@
 [
     {
         "lune": [
-            {"definition" : "Individualiste, il aime bien être dans ma bulle. Aime être le premier. Il peut être dans un leadership. Le 1 est un meneur. Il est volontaire. Il peut avoir une relation fusionnelle mais il est souvent célibataire car il cherche la bonne personne", "distorsion": "Il peut pas se connecter avec tout le monde"},
-            {"definition" : "Il aime le relationnelle. Le 2 à la capacité à se lier avec les autres", "distorsion": "Peut être dans le conflit. Dans l'incapacité ou a du mal à creer des liens avec les autres. Il a du mal à lutter / négocier avec son égo"},
-            {"definition" : "Il aime la négociation. Il peut facilement communiquer avec le mental des autres. Le 3 à la capacité d'ecouter et de savoir parler aux autres.", "distorsion": "NC"},
-            {"definition" : "Il a le mental actif. Le 4 a besoin de performer. Si la confiance et la motivation sont là, le mental sera à toutes épreuves.", "distorsion": "Il pense trop! Il est tétu. Il peut avoir un manque de confiance en lui s'il y a une frustration. S'il a décidé, il ne fera rien!"},
-            {"definition" : "Le 5 est un chiffre de transformation. Le 5 peut coacher les personnes ou le faire évoluer dans le bon sens. Il fait comprendre naturellement les choses. Il maitrise la transformation d'un état à un autre.", "distorsion": "Le 5 peut être instable. Il a besoin de changer. D'un humeur changeante ou bi-polaire. Le 5 peut être infidèle ou déloyale. Il peut manipuler la vérité."},
+            {"definition" : "Individualiste, il aime bien être dans ma bulle. Aime être le premier. Il peut être dans un leadership. Le 1 est un meneur. Il est volontaire. Il peut avoir une relation fusionnelle, mais il est souvent célibataire, car il cherche la bonne personne.", "distorsion": "Il peut pas se connecter avec tout le monde"},
+            {"definition" : "Il aime le relationnelle. Le 2 a la capacité à se lier avec les autres", "distorsion": "Peut être dans le conflit. Dans l'incapacité ou a du mal à creer des liens avec les autres. Il a du mal à lutter / négocier avec son égo"},
+            {"definition" : "Il aime la négociation. Il peut facilement communiquer avec le mental des autres. Le 3 à la capacité d'écouter et de savoir parler aux autres.", "distorsion": "NC"},
+            {"definition" : "Il a le mental actif. Le 4 a besoin de performer. Si la confiance et la motivation sont là, le mental sera à toutes épreuves.", "distorsion": "Il pense trop ! Il est têtu. Il peut avoir un manque de confiance en lui s'il y a une frustration. S'il a décidé, il ne fera rien !"},
+            {"definition" : "Le 5 est un chiffre de transformation. Le 5 peut coacher les personnes ou le faire évoluer dans le bon sens. Il fait comprendre naturellement les choses. Il maîtrise la transformation d'un état à un autre.", "distorsion": "Le 5 peut être instable. Il a besoin de changer. D'une humeur changeante ou bi-polaire. Le 5 peut être infidèle ou déloyale. Il peut manipuler la vérité."},
             {"definition" : "NC", "distorsion": "NC"},
             {"definition" : "Le 7 porte bonheur. Il s'agit d'un chiffre noble et puissant. Il a une ouverture d'esprit et l'élève au dessus de l'horizon. Le 7 doit avoir la connaissance pour avoir du discernement pour ne pas tomber dans le fanatisme.L'ego jouera alors comme un garde fou. Le 7, c'est l'égo du discernement", "distorsion": "Le 7 peut être psycho rigide sur la spiritualité. Il peut se faire endoctriner facilement. Le 7 ne vit que par le regard de la communauté spirituelle"},
             {"definition" : "Avec le 8, l'échec est un diplôme. Il a de la confiance et de l'abondance. Il fait les choses qu'il aime.", "distorsion": "Le 8 peut avoir un manque de confiance en soi."},
@@ -32,8 +32,8 @@
             {"definition" : "Le 3 est en communication avec le monde végétale et animal. Il a un ancrage. Il a une faculté dans la biologie et les sciences naturelles", "distorsion": "NC"},
             {"definition" : "NC", "distorsion": "NC"},
             {"definition" : "Le 5 en terre est le nombre de la transformation. Il est utiliser pour faire du bien aux gens. Métier thérapeutique ?", "distorsion": "NC"},
-            {"definition" : "Le 6 en terre a la faculté d'organiser, d'enseigner. Il a une capacité d'harmoniser. Il est souvent le chef de famille. Celui ou celle que l'on va voir pour organiser. LE 6 en terre a un besoin d'organiser avec la nature.", "distorsion": "NC"},
-            {"definition" : "Le 7 e nterre est le nombre de la sagesse. Il prend de la hauteur et est capable de prendre le meilleur chemin.", "distorsion": "NC"},
+            {"definition" : "Le 6 en terre a la faculté d'organiser, d'enseigner. Il a une capacité d'harmoniser. Il est souvent le chef de famille. Celui ou celle que l'on va voir pour organiser. Le 6 en terre a un besoin d'organiser avec la nature.", "distorsion": "NC"},
+            {"definition" : "Le 7 en terre est le nombre de la sagesse. Il prend de la hauteur et est capable de prendre le meilleur chemin.", "distorsion": "NC"},
             {"definition" : "NC", "distorsion": "NC"},
             {"definition" : "NC", "distorsion": "NC"}
         ]
