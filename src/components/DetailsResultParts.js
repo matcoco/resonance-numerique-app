@@ -17,7 +17,7 @@ const DetailsResultsPart = () => {
 
     useEffect(() => {
         let cleanup = true
-        let url = '/datas.json'
+        let url = 'datas.json'
         fetch(url).then(res => res.json()).then(data => {
             for (let item of data) {
                 if (item.hasOwnProperty(state.type)) {

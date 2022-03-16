@@ -10,17 +10,18 @@ const MentionLegal = () => {
                     <div className="mention-text">
                         <h2>IDENTITÉ</h2>
                         <p>Nom du site web : Résonance Numérique</p>
-                        <p>Adresse :  https://nomdusite.domaine</p>
+                        <p>Adresse :  https://matcoco.github.io/resonance-numerique-app/</p>
                         <p>Propriétaire : Mathieu GAUBAL-VATILINGON - Développeur Web</p>
                         <p>Conception et réalisation : Mathieu GAUBAL-VATILINGON</p>
                         <p>Hébergement : Github</p>
                     </div>
                     <div className="mention-text">
                         <h2>CONDITIONS D’UTILISATION</h2>
-                        <p>L’utilisation du présent site implique l’acceptation pleine et entière des conditions générales d’utilisation décrites ci-après. Ces conditions d’utilisation sont susceptibles d’être modifiées ou complétées à tout moment.</p>
+                        <p>L'utilisation de ce site est entièrement gratuite.</p>
                     </div>
                     <div className="mention-text">
                         <h2>INFORMATIONS</h2>
+                        <p>Le propriétaire du site n'est pas l'auteur de la théorie de la Résonance Numérique.</p>
                         <p>Les informations et documents du site sont présentés à titre indicatif, n’ont pas de caractère exhaustif, et ne peuvent engager la responsabilité du propriétaire du site.</p>
                         <p>Le propriétaire du site ne peut être tenu responsable des dommages directs et indirects consécutifs à l’accès au site.</p>
                     </div>

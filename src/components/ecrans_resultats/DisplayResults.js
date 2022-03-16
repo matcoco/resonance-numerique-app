@@ -17,7 +17,7 @@ const DisplayResults = () => {
     useDataStatus(prenom)
     const [back, setBack] = useState("")
     const { state } = useLocation()
-    console.log(state)
+
     useEffect(() => {
         let cleanup = true
         if (cleanup) {

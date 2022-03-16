@@ -7,12 +7,15 @@
     background-repeat: no-repeat;
 }
 
+.illustration-home{
+    margin-top: 2rem;
+}
+
 
 /* au-dessus de 1367px */
 @media screen and (min-width: 1025px) {
     .container-home{
-    /*     background-image: url('../../../public/assets/wave_1025.svg'); */
-    background-image: url('http://localhost:3000/assets/wave_1025.svg');
+        background-image: url('../../../public/assets/wave_1025.svg');
         background-size: cover;
         background-repeat: no-repeat;
     }
