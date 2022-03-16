@@ -13,7 +13,7 @@ const Archivage = () => {
     const [data, setData] = useState([])
     const { dispatch } = useContext(DataContext)
     const navigate = useNavigate()
-    const uri = process.env.REACT_APP_URI;
+
 
     const getItemFromStorage = () => {
         let store = localStorage.getItem('data');
@@ -34,7 +34,7 @@ const Archivage = () => {
         return (
             <div className="container-iconNumber-archivage">
                 <div className="container-icon">
-                    <img src={uri + path} alt={text} />
+                    <img src={path} alt={text} />
                 </div>
                 <div className="container-number-conjoncture">
                     <p className="number-conjoncture">{number}</p>
@@ -54,7 +54,7 @@ const Archivage = () => {
     const handleClickNavigateToItem = (id) => {
         let currentItem = data[id]
         dispatch({ type: SET_BIRTH_DATE, payload: currentItem })
-        navigate(uri + "resultats", { state: { back: `archives` } })
+        navigate("/resultats", { state: { back: `archives` } })
     }
 
 

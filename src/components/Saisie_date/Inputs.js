@@ -13,12 +13,11 @@ const Inputs = () => {
     const navigate = useNavigate()
     let current_date = useRef(null)
     let current_prenom = useRef(null)
-    const uri = process.env.REACT_APP_URI
     const arrayZodiac = [
         {
             "aquarius": {
                 "obj": {
-                    "path": uri + "assets/zodiac_img/verseau.svg",
+                    "path": "assets/zodiac_img/verseau.svg",
                     "fr": "verseau"
                 }
             }
@@ -26,7 +25,7 @@ const Inputs = () => {
         {
             "capricorn": {
                 "obj": {
-                    "path": uri + "assets/zodiac_img/capricorne.svg",
+                    "path": "assets/zodiac_img/capricorne.svg",
                     "fr": "capricorne"
                 }
             }
@@ -34,7 +33,7 @@ const Inputs = () => {
         {
             "aries": {
                 "obj": {
-                    "path": uri + "assets/zodiac_img/belier.svg",
+                    "path": "assets/zodiac_img/belier.svg",
                     "fr": "bélier"
                 }
             }
@@ -42,7 +41,7 @@ const Inputs = () => {
         {
             "taurus": {
                 "obj": {
-                    "path": uri + "assets/zodiac_img/taureau.svg",
+                    "path": "assets/zodiac_img/taureau.svg",
                     "fr": "taureau"
                 }
             }
@@ -50,7 +49,7 @@ const Inputs = () => {
         {
             "gemini": {
                 "obj": {
-                    "path": uri + "assets/zodiac_img/gemeau.svg",
+                    "path": "assets/zodiac_img/gemeau.svg",
                     "fr": "gémeau"
                 }
             }
@@ -58,7 +57,7 @@ const Inputs = () => {
         {
             "cancer": {
                 "obj": {
-                    "path": uri + "assets/zodiac_img/cancer.svg",
+                    "path": "assets/zodiac_img/cancer.svg",
                     "fr": "cancer"
                 }
             }
@@ -66,7 +65,7 @@ const Inputs = () => {
         {
             "leo": {
                 "obj": {
-                    "path": uri + "assets/zodiac_img/lion.svg",
+                    "path": "assets/zodiac_img/lion.svg",
                     "fr": "lion"
                 }
             }
@@ -74,7 +73,7 @@ const Inputs = () => {
         {
             "virgo": {
                 "obj": {
-                    "path": uri + "assets/zodiac_img/vierge.svg",
+                    "path": "assets/zodiac_img/vierge.svg",
                     "fr": "vierge"
                 }
             }
@@ -82,7 +81,7 @@ const Inputs = () => {
         {
             "libra": {
                 "obj": {
-                    "path": uri + "assets/zodiac_img/balance.svg",
+                    "path": "assets/zodiac_img/balance.svg",
                     "fr": "balance"
                 }
             }
@@ -90,7 +89,7 @@ const Inputs = () => {
         {
             "scorpio": {
                 "obj": {
-                    "path": uri + "assets/zodiac_img/scorpion.svg",
+                    "path": "assets/zodiac_img/scorpion.svg",
                     "fr": "scorpion"
                 }
             }
@@ -98,7 +97,7 @@ const Inputs = () => {
         {
             "sagittarius": {
                 "obj": {
-                    "path": uri + "assets/zodiac_img/sagittaire.svg",
+                    "path": "assets/zodiac_img/sagittaire.svg",
                     "fr": "sagittaire"
                 }
             }
@@ -106,7 +105,7 @@ const Inputs = () => {
         {
             "pisces": {
                 "obj": {
-                    "path": uri + "assets/zodiac_img/poisson.svg",
+                    "path": "assets/zodiac_img/poisson.svg",
                     "fr": "poisson"
                 }
             }
@@ -129,7 +128,7 @@ const Inputs = () => {
 
             dispatch({ type: SET_BIRTH_DATE, payload: { ...infos, zodiacImgPath: zodiac_infos.path, zodiac: zodiac_infos.fr } })
             resetInputs()
-            navigate(uri + "resultats", {})
+            navigate("/resultats")
         } else {
             toast.error("Merci de remplir tous les champs!", { closeOnClick: true, autoClose: 2000, })
         }

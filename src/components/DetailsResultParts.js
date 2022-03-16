@@ -12,12 +12,12 @@ const DetailsResultsPart = () => {
     const [definition, setDefinition] = useState("")
     const [distorsion, setDistorsion] = useState("")
     const { state } = useLocation()
-    const uri = process.env.REACT_APP_URI
+  
     useDataStatus("")
 
     useEffect(() => {
         let cleanup = true
-        let url = uri+'datas.json'
+        let url = '/datas.json'
         fetch(url).then(res => res.json()).then(data => {
             for (let item of data) {
                 if (item.hasOwnProperty(state.type)) {

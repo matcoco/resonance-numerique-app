@@ -2,10 +2,9 @@ import { useNavigate } from "react-router-dom"
 
 const ResultPart = ({ img, number, text, alt, type, classN, back }) => {
     const navigate = useNavigate();
-    const uri = process.env.REACT_APP_URI
     return (
 
-        <div className={classN} onClick={() => navigate(uri + 'resultats/'+ type, { state: { number, type, text, img, alt, back } })}>
+        <div className={classN} onClick={() => navigate('/resultats/'+ type, { state: { number, type, text, img, alt, back } })}>
             <div>
                 <img src={img} alt={alt} />
             </div>
