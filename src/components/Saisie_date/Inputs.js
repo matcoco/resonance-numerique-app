@@ -1,4 +1,5 @@
 import { useContext, useLayoutEffect, useRef } from "react"
+import { capitalize } from "../../utils/Functions"
 import { DataContext } from "../States/context/DataContext"
 import { SET_BIRTH_DATE } from "../States/reducer/ActionsType"
 import Numerologie from "../../utils/Calcul.js"
@@ -126,7 +127,7 @@ const Inputs = () => {
             infos = new Numerologie(current_prenom.current.value, date)
             zodiac_infos = checkZodiacImg(zodiacSign)
 
-            dispatch({ type: SET_BIRTH_DATE, payload: { ...infos, zodiacImgPath: zodiac_infos.path, zodiac: zodiac_infos.fr } })
+            dispatch({ type: SET_BIRTH_DATE, payload: { ...infos, zodiacImgPath: zodiac_infos.path, zodiac: capitalize(zodiac_infos.fr) } })
             resetInputs()
             navigate("/resultats")
         } else {
