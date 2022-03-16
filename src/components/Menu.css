@@ -11,67 +11,13 @@
     color: #D23C61!important;
 }
 
-<<<<<<< HEAD
-@media screen and (min-width: 1025px) and (min-width: 1366px) {
-    .navbar-nav li a {
-        font-size: 1.1rem;
-    }
-
-    .title-nav{
-        font-size: 1.5rem;
-    }
-
-    .navbar-collapse {
-        flex :none;
-        margin-right: 10%;
-    }
-=======
  
->>>>>>> dev-ghpages
 
 .nav-item:hover {
     background-color :#fff!important;
     opacity: 1;
 }
 
-<<<<<<< HEAD
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .navbar-nav li a {
-        font-size: 1.3rem;
-    }
-
-    .title-nav{
-        font-size: 1.5rem;
-    }
-
-    .navbar-collapse {
-        margin-right: 10%;
-    }
-
-}
-
-@media screen and (min-width: 429px) and (max-width: 768px) {
-    .title-nav{
-        font-size: 1.9rem;
-    }
-
-    .nav-link{
-        font-size: 1.2rem;
-    }
-
-    .navbar-collapse {
-        text-align: center;
-        margin-right: auto
-    }
-}
-
-@media screen and (max-width: 428px) {
-    .title-nav{
-        font-size: 1.3rem;
-    }
-
-}
-=======
  
  @import url('https://fonts.googleapis.com/css2?family=Comfortaa');
  .title-nav{
@@ -138,4 +84,3 @@
      }
  
  }
->>>>>>> dev-ghpages
