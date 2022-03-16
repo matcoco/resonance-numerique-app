@@ -30,7 +30,7 @@
     font-weight: bolder;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) and (min-width: 1366px) {
     .navbar-nav li a {
         font-size: 1.1rem;
     }
@@ -46,7 +46,7 @@
 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     .navbar-nav li a {
         font-size: 1.3rem;
     }
@@ -61,7 +61,7 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 429px) and (max-width: 768px) {
     .title-nav{
         font-size: 1.9rem;
     }
@@ -76,7 +76,7 @@
     }
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 428px) {
     .title-nav{
         font-size: 1.3rem;
     }
