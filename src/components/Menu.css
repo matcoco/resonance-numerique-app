@@ -7,15 +7,10 @@
     color: #fff!important;
 }
 
-.nav-link:hover {
-    color: #D23C61!important;
-}
-
  
 
 .nav-item:hover {
-    background-color :#fff!important;
-    opacity: 1;
+    border-bottom: 1px solid #fff;
 }
 
  

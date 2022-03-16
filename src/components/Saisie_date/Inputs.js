@@ -152,7 +152,7 @@ const Inputs = () => {
     }
 
     useLayoutEffect(() => {
-        current_date.current.value = "2001-09-11"
+        current_date.current.value = "2022-08-21"
     })
 
     return (

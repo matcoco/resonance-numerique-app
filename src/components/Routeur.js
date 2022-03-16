@@ -3,7 +3,7 @@ import { useReducer } from "react";
 import {
   Routes,
   Route,
-  BrowserRouter
+  HashRouter
 } from "react-router-dom";
 import DetailsResultsPart from "./DetailsResultParts";
 import DisplayResults from "./ecrans_resultats/DisplayResults";
@@ -29,7 +29,7 @@ const Routeur = () => {
 
   return (
     <DataContext.Provider value={{ state, dispatch }}>
-      <BrowserRouter>
+      <HashRouter>
         <Menu />
         <div className="page-container">
           <div className="content-wrap">
@@ -47,7 +47,7 @@ const Routeur = () => {
           <Footer />
         </div>
         <ToastContainer />
-      </BrowserRouter>
+      </HashRouter>
     </DataContext.Provider >
   )
 }
